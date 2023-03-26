@@ -1,0 +1,18 @@
+{
+  "name": "vue3-demo-layout",
+  "private": true,
+  "workspaces": [
+    "./layout"
+  ],
+  "version": "0.0.0",
+  "scripts": {
+    "start": "lerna run --scope=vue3-demo-layout_* --parallel start",
+    "build": "lerna run --scope=vue3-demo-layout_* build",
+    "serve": "lerna run --scope=vue3-demo-layout_* --parallel serve",
+    "clean": "lerna run --scope=vue3-demo-layout_* --parallel clean"
+  },
+  "devDependencies": {
+    "lerna": "3.22.1",
+    "wait-on": "^7.0.1"
+  }
+}

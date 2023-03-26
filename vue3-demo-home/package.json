@@ -1,0 +1,18 @@
+{
+  "name": "vue3-demo-home",
+  "private": true,
+  "workspaces": [
+    "./home"
+  ],
+  "version": "0.0.0",
+  "scripts": {
+    "start": "lerna run --scope=vue3-demo-home_* --parallel start",
+    "build": "lerna run --scope=vue3-demo-home_* build",
+    "serve": "lerna run --scope=vue3-demo-home_* --parallel serve",
+    "clean": "lerna run --scope=vue3-demo-home_* --parallel clean"
+  },
+  "devDependencies": {
+    "lerna": "3.22.1",
+    "wait-on": "^7.0.1"
+  }
+}
